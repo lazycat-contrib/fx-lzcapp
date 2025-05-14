@@ -1,0 +1,24 @@
+lzc-sdk-version: "0.1"
+name: fx
+package: lazycat.community.app.fx
+version: 0.1.2
+description: "A (micro)blogging server that you can self-host"
+homepage: https://github.com/rikhuijzer/fx
+author: rikhuijzer
+application:
+  subdomain: fx
+  background_task: true
+  public_path:
+    - /
+  routes:
+    - /=http://fx-server:3000/
+services:
+  fx-server:
+    image: docker.1ms.run/rikhuijzer/fx:0.1.2
+    environment:
+      - FX_DOMAIN=${LAZYCAT_APP_DOMAIN}
+      - FX_USERNAME=${FX_USERNAME:-lazycat}
+      - FX_PASSWORD=${FX_PASSWORD:-lazycat}
+
+    binds:
+      - /lzcapp/var/data:/data
