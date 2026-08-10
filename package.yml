@@ -1,0 +1,15 @@
+package: lazycat.community.app.fx
+version: 0.1.2
+name: fx
+description: "A (micro)blogging server that you can self-host"
+min_os_version: 1.5.0
+homepage: https://github.com/rikhuijzer/fx
+author: rikhuijzer
+
+locales:
+  zh:
+    name: fx
+    description: 一个高效、可自托管的微博客服务
+  en:
+    name: fx
+    description: An efficient self-hosted microblogging service
