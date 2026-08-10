@@ -18,11 +18,11 @@ application:
 services:
   fx-server:
     # docker.io/rikhuijzer/fx:0.1.2
-    image: docker.io/rikhuijzer/fx:0.1.2
+    # upstream: docker.io/rikhuijzer/fx:1.6.1
+    image: registry.lazycat.cloud/czyt/rikhuijzer/fx:2cccbc52930bddb0
     environment:
       - FX_DOMAIN=${LAZYCAT_APP_DOMAIN}
       - FX_USERNAME={{ .U.login_user }}
       - FX_PASSWORD={{ .U.login_password }}
-
     binds:
       - /lzcapp/var/data:/data
