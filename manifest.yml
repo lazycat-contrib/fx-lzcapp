@@ -18,8 +18,8 @@ application:
 services:
   fx-server:
     # docker.io/rikhuijzer/fx:0.1.2
-    # upstream: docker.io/rikhuijzer/fx:1.6.2
-    image: registry.lazycat.cloud/czyt/rikhuijzer/fx:bdf5338b58e16b2e
+    # upstream: docker.io/rikhuijzer/fx:1.6.3
+    image: registry.lazycat.cloud/czyt/rikhuijzer/fx:0a2710892f8903f0
     environment:
       - FX_DOMAIN=${LAZYCAT_APP_DOMAIN}
       - FX_USERNAME={{ .U.login_user }}
