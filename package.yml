@@ -1,5 +1,5 @@
 package: lazycat.community.app.fx
-version: 2.0.0
+version: 2.0.1
 name: fx
 description: "A (micro)blogging server that you can self-host"
 min_os_version: 1.5.0
