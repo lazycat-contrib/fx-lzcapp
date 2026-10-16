@@ -1,6 +1,6 @@
 package: lazycat.community.app.fx
 license: MIT
-version: 2.0.1
+version: 2.1.0
 name: fx
 description: "A (micro)blogging server that you can self-host"
 min_os_version: 1.5.0
